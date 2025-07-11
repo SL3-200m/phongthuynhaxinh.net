@@ -1,11 +1,20 @@
-# robots.txt for CM8 Online Casino
-# For domain: phongthuynhaxinh.net
+# robots.txt for https://phongthuynhaxinh.net/
 
 User-agent: *
+
+# Disallow pages that are not useful for search engine users
+Disallow: /login
+Disallow: /register
+
+# Disallow user-specific and administrative directories
+Disallow: /account/
+Disallow: /admin/
+
+# Disallow internal search results
+Disallow: /search
+
+# Allow all other content
 Allow: /
 
-# Directives for specific sections that might not need indexing (if any) could be added here, e.g.:
-# Disallow: /admin/
-# Disallow: /temp/
-
+# Location of the sitemap
 Sitemap: https://phongthuynhaxinh.net/sitemap.xml
