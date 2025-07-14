@@ -1,20 +1,10 @@
 # robots.txt for https://phongthuynhaxinh.net/
 
 User-agent: *
-
-# Disallow pages that are not useful for search engine users
+# Allow all crawlers full access by default.
+# The following lines disallow specific pages that are not useful in search results.
 Disallow: /login
 Disallow: /register
 
-# Disallow user-specific and administrative directories
-Disallow: /account/
-Disallow: /admin/
-
-# Disallow internal search results
-Disallow: /search
-
-# Allow all other content
-Allow: /
-
-# Location of the sitemap
+# Point all compliant crawlers to the sitemap file.
 Sitemap: https://phongthuynhaxinh.net/sitemap.xml
